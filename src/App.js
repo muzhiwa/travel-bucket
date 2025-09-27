@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import AddDestination from "./pages/AddDestination";
+import PhotoSearchPage from "./pages/PhotoSearchPage";
+import AIPage from "./pages/AIPage";
+import { getDestinations } from "./services/localStorage";
+import "./styles/App.css";
 
 function App() {
+  const [destinations, setDestinations] = useState([]);
+
+  useEffect(() => {
+    const savedDestinations = getDestinations();
+    setDestinations(savedDestinations);
+  }, []);
+
+  const updateDestinations = (newDestinations) => {
+    setDestinations(newDestinations);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="main-content" style={{ paddingTop: "80px" }}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                destinations={destinations}
+                updateDestinations={updateDestinations}
+              />
+            }
+          />
+          <Route
+            path="/add"
+            element={
+              <AddDestination
+                destinations={destinations}
+                updateDestinations={updateDestinations}
+              />
+            }
+          />
+          <Route path="/photos" element={<PhotoSearchPage />} />
+          <Route path="/ai" element={<AIPage />} />
+        </Routes>
+        <Footer />
+      </div>
     </div>
   );
 }
