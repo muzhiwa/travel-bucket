@@ -12,7 +12,7 @@ const PhotoSearchPage = () => {
       navigate("/add", {
         state: { selectedPhoto: photoUrl },
       });
-    } else {o
+    } else {
       navigate("/add", {
         state: { selectedPhoto: photoUrl },
       });
