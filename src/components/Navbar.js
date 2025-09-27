@@ -3,7 +3,6 @@ import {
   Navbar as BootstrapNavbar,
   Nav,
   Container,
-  Button,
 } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 

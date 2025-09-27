@@ -4,7 +4,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 import {
   saveDestination,
   updateDestination,
-  getDestinations,
 } from "../services/localStorage";
 
 const AddDestination = ({ destinations, updateDestinations }) => {
