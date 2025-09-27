@@ -10,11 +10,11 @@ A beautiful and functional single-page application for managing your travel dest
 - **Destination Grid**: Beautiful card-based display of all your destinations
 - **Smart Search & Filter**: Search by name, country, city, or notes. Filter by country, tags, and visited status
 - **Statistics Dashboard**: Track total destinations, visited count, and wishlist items
-![Dashboard with Fiters](./screenshots\filter-and-dashboard.png)
+![Dashboard with Fiters](./screenshots/filter-and-dashboard.png)
 
 ### ➕ Add/Edit Destinations
 - **Comprehensive Form**: Add detailed information about each destination
-![Add Your Destinations](./screenshots\add-destination.png)
+![Add Your Destinations](./screenshots/add-destination.png)
 - **Photo Integration**: Add custom photos or search from Pixel
 - **Tag System**: Organize destinations with custom tags
 - **Priority Levels**: Categorize as Wishlist, Soon, or Planned
@@ -24,14 +24,14 @@ A beautiful and functional single-page application for managing your travel dest
 - **Pixel Integration**: Search and browse high-quality destination photos
 - **Masonry Grid**: Pinterest-style photo gallery
 - **One-Click Selection**: Easily add photos to your destinations
-![Search for Travel Destinations](./screenshots\destination-photos.png)
+![Search for Travel Destinations](./screenshots/destination-photos.png)
 
 ### 🤖 AI Travel Assistant
 - **Smart Chat Interface**: Get travel tips and recommendations
 - **Typewriter Effect**: Engaging response animation
 - **Markdown Support**: Formatted responses with headings and lists
 - **Travel Expertise**: Weather, attractions, culture, and planning advice
-![Search for Travel Destinations](./screenshots\ai-chat.png)
+![Search for Travel Destinations](./screenshots/ai-chat.png)
 
 ## 🚀 Quick Start
 
