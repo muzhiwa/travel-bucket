@@ -40,7 +40,7 @@ const ContactForm = () => {
         <h3 className="mb-4">Contact Us</h3>
 
         {showAlert && (
-          <Alert variant="success" className="custom-alert mb-4">
+          <Alert className="custom-alert mb-4">
             Thank you for your message! We'll get back to you soon.
           </Alert>
         )}

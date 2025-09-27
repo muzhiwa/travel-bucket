@@ -18,7 +18,6 @@
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(58, 134, 255, 0.4);
   background: linear-gradient(
     135deg,
     var(--primary) 0%,
@@ -85,12 +84,16 @@
   box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.2);
 }
 
+.custom-alert {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  border-color: var(--primary-dark);
+}
 
 .toast {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   color: white;
   padding: 15px 25px;
   border-radius: 8px;

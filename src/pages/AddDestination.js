@@ -128,8 +128,7 @@ const AddDestination = ({ destinations, updateDestinations }) => {
     <Container className="py-5" style={{ paddingTop: "100px" }}>
       {showToast && (
         <Alert
-          variant="success"
-          className="position-fixed top-0 end-0 m-3"
+          className="position-fixed top-0 end-0 m-3 custom-alert"
           style={{ zIndex: 1050 }}
         >
           Destination {isEditing ? "updated" : "added"} successfully!
