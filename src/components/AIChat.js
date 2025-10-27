@@ -22,10 +22,6 @@ const AIChat = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
   const sendMessage = async (e) => {
     e.preventDefault();
     if (!inputMessage.trim() || isLoading) return;
@@ -41,7 +37,7 @@ const AIChat = () => {
         sender: "user",
         text: userMessage,
         id: newMessageId,
-        hasBeenTyped: true, 
+        hasBeenTyped: true,
       },
     ]);
     setIsLoading(true);
@@ -84,7 +80,7 @@ const AIChat = () => {
           sender: "ai",
           text: "I'm sorry, I'm having trouble connecting right now. Please try again later.",
           id: errorMessageId,
-          hasBeenTyped: true, 
+          hasBeenTyped: true,
         },
       ]);
     } finally {
