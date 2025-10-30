@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import AddDestination from "./pages/AddDestination";
 import PhotoSearchPage from "./pages/PhotoSearchPage";
 import AIPage from "./pages/AIPage";
+import AITravelPlanner from "./pages/AITravelPlanner";
 import ScrollToTop from "./components/Scroller";
 import { getDestinations } from "./services/localStorage";
 import "./styles/App.css";
@@ -48,6 +49,7 @@ function App() {
           />
           <Route path="/photos" element={<PhotoSearchPage />} />
           <Route path="/ai" element={<AIPage />} />
+          <Route path="/ai-planner" element={<AITravelPlanner />} />
         </Routes>
         <Footer />
       </div>

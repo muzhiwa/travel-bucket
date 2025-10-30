@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Navbar as BootstrapNavbar,
-  Nav,
-  Container,
-} from "react-bootstrap";
+import { Navbar as BootstrapNavbar, Nav, Container } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -114,6 +110,22 @@ const Navbar = () => {
               }}
             >
               AI Assistance
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/ai-planner"
+              className={location.pathname === "/ai-planner" ? "active" : ""}
+              onClick={handleNavClick}
+              style={{
+                color: "rgba(255, 255, 255, 0.85)",
+                fontWeight: "500",
+                padding: "8px 20px",
+                borderRadius: "8px",
+                transition: "var(--transition)",
+                whiteSpace: "nowrap",
+              }}
+            >
+              AI Travel Planner
             </Nav.Link>
           </Nav>
         </BootstrapNavbar.Collapse>
