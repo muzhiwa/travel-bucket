@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import AddDestination from "./pages/AddDestination";
 import PhotoSearchPage from "./pages/PhotoSearchPage";
 import AIPage from "./pages/AIPage";
+import ScrollToTop from "./components/Scroller";
 import { getDestinations } from "./services/localStorage";
 import "./styles/App.css";
 
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="main-content" style={{ paddingTop: "80px" }}>
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"
