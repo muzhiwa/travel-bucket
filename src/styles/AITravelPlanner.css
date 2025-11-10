@@ -203,6 +203,11 @@
     padding: 1rem;
     font-size: 0.9rem;
   }
+
+  .download-button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -216,5 +221,10 @@
 
   .step-title {
     font-size: 1.3rem;
+  }
+
+  .download-button {
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
